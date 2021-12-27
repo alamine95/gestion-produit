@@ -16,6 +16,12 @@ const ProductCard = (props) => {
             style={{ color: "red", marginTop: "7px" }}
             onClick={() => props.clickHander(id)}
             ></i>
+
+            <Link to={{ pathname:`/edit`, state:{product: props.product}}}>
+              <i className="edit alternate outline icon"
+              style={{ color: "blue", marginTop: "7px" }}
+              ></i>
+            </Link>
           
           <ul class="list-inline small">
             <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
