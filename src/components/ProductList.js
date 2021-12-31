@@ -14,20 +14,29 @@ const ProductList = (props) => {
     })
 
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col">
-                <h2>Produit List</h2>
-                </div>
-                <div className="col">
-                <Link to="/add"><button className="btn btn-primary">Add Produit</button></Link>
+        <div>
+
+            <div className="container mt-5">
+                <div>
+                    <div className="row">
+                        <div className="col">
+                        <h2>Produit List</h2>
+                        </div>
+                        <div className="col">
+                        <Link to="/add"><button className="btn btn-primary">Add Produit</button></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class=" pb-5 mb-4">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                  {renderProductList}
+            <div className="container">
+                <div className="row">
+                    
+                    {renderProductList}
+                
                 </div>
             </div>
+                    
+            
 
         </div>
     );
