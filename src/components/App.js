@@ -67,10 +67,11 @@ function App() {
 
   return (
     <div >
-      <Header/>
+      
         <Router>
+          <Header/>
           <Switch>
-
+          
           <Route
            path="/"
            exact

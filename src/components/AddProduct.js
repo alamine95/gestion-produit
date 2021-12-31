@@ -21,7 +21,7 @@ class AddProduct extends React.Component {
 
     render() {
         return (
-            <div className="mt-4">
+            <div className="container mt-4">
                 <h2 className="text-center">Ajouter Produit</h2>
                 <form className="col-lg-6">
                     <div class="form-group">
@@ -49,7 +49,7 @@ class AddProduct extends React.Component {
                          />
                     </div>
                     <div className="form-group">
-                        <button type="button" class="btn btn-success" onClick={this.add}>Add</button>
+                        <button type="button" class="btn btn-primary" onClick={this.add}>Ajouter</button>
                     </div>
                     
                 </form>
